@@ -184,3 +184,45 @@ footer {
     color: #777;
     margin-top: 40px;
 }
+
+/* MOBILE LAYOUT FIXES */
+@media (max-width: 768px) {
+
+    /* Make sections auto-height so they expand naturally */
+    .section,
+    .section-3 {
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Stack images and text vertically */
+    .profile-pic,
+    .career-pic,
+    .project-img-1,
+    .game-code-pic,
+    .game-pic,
+    .simulation-pic {
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    /* Reset all text transforms so they flow normally */
+    .my-text,
+    .sub-1-text,
+    .sub-2-text,
+    .sub-3-text {
+        margin: 0;
+        transform: none;
+    }
+
+    /* Reset container transforms */
+    .sub-1,
+    .sub-2,
+    .sub-3 {
+        transform: none;
+        margin: 40px 0;
+    }
+}
