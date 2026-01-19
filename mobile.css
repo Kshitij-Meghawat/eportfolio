@@ -1,0 +1,59 @@
+/* MOBILE ONLY */
+.section,
+.section-3 {
+    height: auto !important;
+    padding: 20px !important;
+    overflow: visible !important;
+}
+
+#about,
+#careers,
+#projects {
+    display: block !important;
+}
+
+.my-text {
+    margin: 0 !important;
+    transform: none !important;
+    font-size: 20px !important;
+}
+
+.profile-pic,
+.career-pic,
+.project-img-1,
+.game-code-pic,
+.game-pic,
+.simulation-pic {
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    position: static !important;
+    margin: 20px 0 !important;
+    display: block !important;
+}
+
+.sub-1,
+.sub-2,
+.sub-3 {
+    transform: none !important;
+    margin: 20px 0 10px 0 !important;
+    text-align: center !important;
+}
+
+.sub-1-text,
+.sub-2-text,
+.sub-3-text {
+    margin: 0 !important;
+    transform: none !important;
+    font-size: 20px !important;
+}
+
+.container {
+    width: 95% !important;
+    padding: 10px !important;
+}
+
+nav a {
+    margin: 0 10px !important;
+    font-size: 16px !important;
+}
