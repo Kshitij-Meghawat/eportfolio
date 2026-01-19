@@ -188,11 +188,24 @@ footer {
 /* MOBILE LAYOUT FIXES */
 @media (max-width: 768px) {
 
-    /* Make sections auto-height so they expand naturally */
+    /* Make the container wider on mobile */
+    .container {
+        width: 95%;
+        max-width: none;
+    }
+
+    /* Make section boxes fill the screen more comfortably */
     .section,
     .section-3 {
+        width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 25px;
+    }
+
+    /* Prevent nav links from wrapping */
+    nav a {
+        margin: 0 12px;
+        font-size: 16px;
     }
 
     /* Stack images and text vertically */
@@ -209,7 +222,7 @@ footer {
         margin: 20px 0;
     }
 
-    /* Reset all text transforms so they flow normally */
+    /* Reset text transforms so they flow normally */
     .my-text,
     .sub-1-text,
     .sub-2-text,
@@ -223,6 +236,6 @@ footer {
     .sub-2,
     .sub-3 {
         transform: none;
-        margin: 40px 0;
+        margin: 40px 0; /* spacing between each project block */
     }
 }
