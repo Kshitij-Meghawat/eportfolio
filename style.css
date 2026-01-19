@@ -1,14 +1,12 @@
 /* GLOBAL STYLES */
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #FFC067
+    background-color: #FFC067;
 }
 
 /* NAVIGATION BAR */
@@ -30,9 +28,7 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ffcc00;
-}
+nav a:hover { color: #ffcc00; }
 
 /* PAGE CONTAINER */
 .container {
@@ -70,7 +66,6 @@ nav a:hover {
 /* TEXT FORMAT */
 .my-text {
     margin-left: 47%;
-    transform: translateX(0%);
     transform: translateY(-115%);
 }
 
@@ -84,6 +79,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/* CAREER IMAGE */
 .career-pic {
     width: 400px;
     height: 320px;
@@ -93,9 +89,9 @@ nav a:hover {
     position: absolute;
     right: 25px;
     top: 80px;
-    margin-bottom: 20px;
 }
 
+/* PROJECT SECTION */
 .section-3 {
     background: #6BAED6;
     position: relative;
@@ -110,72 +106,19 @@ nav a:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.sub-1 {
-    transform: translateX(8.5%);
-}
+/* DESKTOP TRANSFORMS (unchanged) */
+.sub-1 { transform: translateX(8.5%); }
+.sub-1-text { margin-left: 47%; transform: translateY(11%); }
+.project-img-1 { width: 400px; height: 320px; transform: translateY(-345%); }
 
-.sub-1-text {
-    margin-left: 47%;
-    transform: translateX(0%);
-    transform: translateY(11%);
-}
+.sub-2 { transform: translate(63%, 510%); }
+.sub-2-text { margin-right: 47%; transform: translateY(50%); }
+.game-code-pic { width: 400px; height: 320px; transform: translate(530px, -950px); }
+.game-pic { width: 400px; transform: translate(20px, -935px); }
 
-.project-img-1 {
-    width: 400px;
-    height: 320px;
-    transform: translateY(-345%);
-    border-radius: 10%;
-    object-fit: cover;
-    display: block;
-}
-
-.sub-2 {
-    transform: translate(63%, 510%);
-}
-
-.sub-2-text {
-    margin-right: 47%;
-    transform: translate(0%, 50%);
-}
-
-.game-code-pic {
-    width: 400px;
-    height: 320px;
-    transform: translate(530px, -950px);
-    border-radius: 10%;
-    object-fit: cover;
-    display: block;
-
-}
-
-.game-pic {
-    width: 400px;
-    height: auto;
-    transform: translate(20px, -935px);
-    border-radius: 10px;
-    object-fit: cover;
-    display: block;
-
-}
-
-.sub-3 {
-    transform: translate(70%, 1200%);
-}
-
-.sub-3-text {
-    margin-right: 46%;
-    transform: translate(0%, 95%);
-}
-
-.simulation-pic {
-    width: 400px;
-    height: 320px;
-    transform: translate(530px, -775px);
-    border-radius: 10%;
-    object-fit: cover;
-    display: block;
-
-}
+.sub-3 { transform: translate(70%, 1200%); }
+.sub-3-text { margin-right: 46%; transform: translateY(95%); }
+.simulation-pic { width: 400px; height: 320px; transform: translate(530px, -775px); }
 
 /* FOOTER */
 footer {
@@ -185,65 +128,53 @@ footer {
     margin-top: 40px;
 }
 
-
 /* ============================================
    MOBILE FIXES — KEEP DESKTOP EXACTLY THE SAME
    ============================================ */
 @media (max-width: 768px) {
 
-    /* Remove fixed heights so sections expand */
-    .section,
-    .section-3 {
+    .section, .section-3 {
         height: auto !important;
         padding: 20px !important;
     }
 
-    /* Stack everything vertically */
-    #about,
-    #careers,
-    #projects {
+    #about, #careers, #projects {
         display: block !important;
     }
 
-    /* ABOUT ME text */
     .my-text {
         margin: 0 !important;
         transform: none !important;
         font-size: 20px !important;
     }
 
-    /* DO NOT TOUCH ABOUT ME IMAGE OR AI IMAGE */
-.profile-pic,
-.career-pic {
-    width: 100% !important;
-    height: auto !important;
-    transform: none !important;
-    position: static !important;
-    margin: 20px 0 !important;
-    display: block !important;
-}
+    .profile-pic,
+    .career-pic {
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        position: static !important;
+        margin: 20px 0 !important;
+        display: block !important;
+    }
 
+    .project-block {
+        display: flex !important;
+        flex-direction: column !important;
+    }
 
-    /* PROJECT HEADINGS + TEXT */
-    .sub-1,
-    .sub-2,
-    .sub-3 {
+    .sub-1, .sub-2, .sub-3 {
         transform: none !important;
         margin: 20px 0 10px 0 !important;
         text-align: center !important;
     }
 
-    .sub-1-text,
-    .sub-2-text,
-    .sub-3-text {
+    .sub-1-text, .sub-2-text, .sub-3-text {
         margin: 0 !important;
         transform: none !important;
         font-size: 20px !important;
-        display: block !important;
-        position: static !important;
     }
 
-    /* ONLY PROJECT IMAGES GET FULL WIDTH + STACKING */
     .project-img-1,
     .game-code-pic,
     .game-pic,
@@ -252,34 +183,15 @@ footer {
         height: auto !important;
         transform: none !important;
         margin: 20px 0 !important;
-        position: static !important;
-        display: block !important;
     }
 
-    /* ORDERING FOR PROJECTS */
-    /* Project 1 */
-    .sub-1-text { order: 1; }
-    .project-img-1 { order: 2; }
-
-    /* Project 2 */
-    .sub-2-text { order: 1; }
-    .game-code-pic { order: 2; }
-    .game-pic { order: 3; }
-
-    /* Project 3 */
-    .sub-3-text { order: 1; }
-    .simulation-pic { order: 2; }
-
-    /* Container full width */
     .container {
         width: 95% !important;
         padding: 10px !important;
     }
 
-    /* Navigation spacing */
     nav a {
         margin: 0 10px !important;
         font-size: 16px !important;
     }
 }
-
