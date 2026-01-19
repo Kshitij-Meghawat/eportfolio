@@ -1,12 +1,14 @@
 /* GLOBAL STYLES */
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #FFC067;
+    background-color: #FFC067
 }
 
 /* NAVIGATION BAR */
@@ -28,7 +30,9 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover { color: #ffcc00; }
+nav a:hover {
+    color: #ffcc00;
+}
 
 /* PAGE CONTAINER */
 .container {
@@ -66,6 +70,7 @@ nav a:hover { color: #ffcc00; }
 /* TEXT FORMAT */
 .my-text {
     margin-left: 47%;
+    transform: translateX(0%);
     transform: translateY(-115%);
 }
 
@@ -79,7 +84,6 @@ nav a:hover { color: #ffcc00; }
     margin-bottom: 20px;
 }
 
-/* CAREER IMAGE */
 .career-pic {
     width: 400px;
     height: 320px;
@@ -89,6 +93,7 @@ nav a:hover { color: #ffcc00; }
     position: absolute;
     right: 25px;
     top: 80px;
+    margin-bottom: 20px;
 }
 
 /* PROJECT SECTION */
@@ -114,7 +119,7 @@ nav a:hover { color: #ffcc00; }
 .sub-2 { transform: translate(63%, 510%); }
 .sub-2-text { margin-right: 47%; transform: translateY(50%); }
 .game-code-pic { width: 400px; height: 320px; transform: translate(530px, -950px); }
-.game-pic { width: 400px; transform: translate(20px, -935px); }
+.game-pic { width: 400px; height: auto; transform: translate(20px, -935px); }
 
 .sub-3 { transform: translate(70%, 1200%); }
 .sub-3-text { margin-right: 46%; transform: translateY(95%); }
@@ -128,23 +133,33 @@ footer {
     margin-top: 40px;
 }
 
-@media screen and (max-width: 600px) {
-    /* MOBILE OVERRIDES ONLY */
-    .section, .section-3 {
+/* ============================================
+   MOBILE FIXES — KEEP DESKTOP EXACTLY THE SAME
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* Remove fixed heights so sections expand */
+    .section,
+    .section-3 {
         height: auto !important;
         padding: 20px !important;
-        overflow: visible !important;
     }
 
-    .my-text,
-    .sub-1-text,
-    .sub-2-text,
-    .sub-3-text {
+    /* Stack everything vertically */
+    #about,
+    #careers,
+    #projects {
+        display: block !important;
+    }
+
+    /* ABOUT ME text */
+    .my-text {
         margin: 0 !important;
         transform: none !important;
         font-size: 20px !important;
     }
 
+    /* ONLY resize specific images — NOT all images */
     .profile-pic,
     .career-pic,
     .project-img-1,
@@ -159,6 +174,7 @@ footer {
         display: block !important;
     }
 
+    /* PROJECT HEADINGS + TEXT */
     .sub-1,
     .sub-2,
     .sub-3 {
@@ -167,11 +183,21 @@ footer {
         text-align: center !important;
     }
 
+    .sub-1-text,
+    .sub-2-text,
+    .sub-3-text {
+        margin: 0 !important;
+        transform: none !important;
+        font-size: 20px !important;
+    }
+
+    /* Container full width */
     .container {
         width: 95% !important;
         padding: 10px !important;
     }
 
+    /* Navigation spacing */
     nav a {
         margin: 0 10px !important;
         font-size: 16px !important;
