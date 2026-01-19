@@ -1,7 +1,7 @@
 /* ============================================
-   MOBILE FIXES — KEEP DESKTOP EXACTLY THE SAME
+   MOBILE FIXES — PERFECT STACKING VERSION
    ============================================ */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     /* Let sections grow naturally */
     .section,
@@ -29,37 +29,45 @@
         font-size: 20px !important;
     }
 
-    /* PROJECT HEADINGS + TEXT */
+    /* PROJECTS — FLEX STACKING LIKE YOUR PERFECT VERSION */
+    #projects {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Reset all transforms + positions */
     .sub-1,
-    .sub-2,
-    .sub-3 {
-        transform: none !important;
-        margin: 20px 0 10px 0 !important;
-        text-align: center !important;
-        position: static !important;
-    }
-
     .sub-1-text,
-    .sub-2-text,
-    .sub-3-text {
-        margin: 0 !important;
-        transform: none !important;
-        font-size: 20px !important;
-        position: static !important;
-    }
-
-    /* PROJECT IMAGES */
     .project-img-1,
+    .sub-2,
+    .sub-2-text,
     .game-code-pic,
     .game-pic,
+    .sub-3,
+    .sub-3-text,
     .simulation-pic {
+        position: static !important;
+        transform: none !important;
+        margin: 20px 0 !important;
         width: 100% !important;
         height: auto !important;
-        transform: none !important;
-        position: static !important;
-        margin: 20px 0 !important;
         display: block !important;
+        text-align: center !important;
     }
+
+    /* ORDERING — EXACT FLOW YOU SAID WAS PERFECT */
+    .sub-1 { order: 1; }
+    .sub-1-text { order: 2; }
+    .project-img-1 { order: 3; }
+
+    .sub-2 { order: 4; }
+    .sub-2-text { order: 5; }
+    .game-code-pic { order: 6; }
+    .game-pic { order: 7; }
+
+    .sub-3 { order: 8; }
+    .sub-3-text { order: 9; }
+    .simulation-pic { order: 10; }
 
     /* Container */
     .container {
