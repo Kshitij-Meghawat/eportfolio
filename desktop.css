@@ -8,7 +8,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #FFC067;
+    background-color: #FFC067
 }
 
 /* NAVIGATION BAR */
@@ -70,7 +70,8 @@ nav a:hover {
 /* TEXT FORMAT */
 .my-text {
     margin-left: 47%;
-    transform: translate(0%, -115%);
+    transform: translateX(0%);
+    transform: translateY(-115%);
 }
 
 /* ABOUT ME IMAGE */
@@ -95,12 +96,13 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* PROJECT SECTION */
 .section-3 {
     background: #6BAED6;
     position: relative;
     scroll-margin-top: 55px;
-    padding: 15px 35px 35px 35px;
+    padding: 35px;
+    padding-top: 15px;
+    padding-bottom: 35px;
     margin: 30px 0;
     height: 1620px;
     overflow: hidden;
@@ -108,14 +110,14 @@ nav a:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* PROJECT 1 */
 .sub-1 {
     transform: translateX(8.5%);
 }
 
 .sub-1-text {
     margin-left: 47%;
-    transform: translate(0%, 11%);
+    transform: translateX(0%);
+    transform: translateY(11%);
 }
 
 .project-img-1 {
@@ -127,7 +129,6 @@ nav a:hover {
     display: block;
 }
 
-/* PROJECT 2 */
 .sub-2 {
     transform: translate(63%, 510%);
 }
@@ -144,6 +145,7 @@ nav a:hover {
     border-radius: 10%;
     object-fit: cover;
     display: block;
+
 }
 
 .game-pic {
@@ -153,9 +155,9 @@ nav a:hover {
     border-radius: 10px;
     object-fit: cover;
     display: block;
+
 }
 
-/* PROJECT 3 */
 .sub-3 {
     transform: translate(70%, 1200%);
 }
@@ -172,6 +174,7 @@ nav a:hover {
     border-radius: 10%;
     object-fit: cover;
     display: block;
+
 }
 
 /* FOOTER */
