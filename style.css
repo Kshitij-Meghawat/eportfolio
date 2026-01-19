@@ -158,11 +158,6 @@ footer {
         display: block !important;
     }
 
-    .project-block {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
     .sub-1, .sub-2, .sub-3 {
         transform: none !important;
         margin: 20px 0 10px 0 !important;
@@ -195,4 +190,5 @@ footer {
         font-size: 16px !important;
     }
 }
+
 
