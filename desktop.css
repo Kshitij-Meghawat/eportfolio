@@ -184,18 +184,3 @@ footer {
     color: #777;
     margin-top: 40px;
 }
-
-/* --- DESKTOP FIX: Override cached mobile rules --- */
-
-.project {
-    display: block !important;
-}
-
-.project * {
-    position: relative !important;
-    transform: none !important;
-    width: auto !important;
-    height: auto !important;
-    margin: initial !important;
-    text-align: left !important;
-}
