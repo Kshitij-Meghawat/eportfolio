@@ -131,7 +131,7 @@ footer {
 /* ============================================
    MOBILE FIXES — KEEP DESKTOP EXACTLY THE SAME
    ============================================ */
-@media (max-width: 600px)
+@media (max-width: 600px) {
 
     .section, .section-3 {
         height: auto !important;
@@ -190,5 +190,3 @@ footer {
         font-size: 16px !important;
     }
 }
-
-
