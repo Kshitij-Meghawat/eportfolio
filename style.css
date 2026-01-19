@@ -184,3 +184,85 @@ footer {
     color: #777;
     margin-top: 40px;
 }
+
+/* ============================================
+   MOBILE FIXES — KEEP DESKTOP EXACTLY THE SAME
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* Remove fixed heights so sections expand */
+    .section,
+    .section-3 {
+        height: auto !important;
+        padding: 20px !important;
+    }
+
+    /* Stack everything vertically */
+    #about,
+    #careers,
+    #projects {
+        display: block !important;
+    }
+
+    /* Make all images full width */
+    img {
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 15px 0 !important;
+        position: static !important;
+    }
+
+    /* ABOUT ME text */
+    .my-text {
+        margin: 0 !important;
+        transform: none !important;
+        font-size: 20px !important;
+    }
+
+    /* CAREERS image */
+    .career-pic {
+        margin: 20px 0 !important;
+    }
+
+    /* PROJECTS headings + text */
+    .sub-1,
+    .sub-2,
+    .sub-3 {
+        transform: none !important;
+        margin: 20px 0 10px 0 !important;
+        text-align: center !important;
+    }
+
+    .sub-1-text,
+    .sub-2-text,
+    .sub-3-text {
+        margin: 0 !important;
+        transform: none !important;
+        font-size: 20px !important;
+    }
+
+    /* PROJECT images */
+    .project-img-1,
+    .game-code-pic,
+    .game-pic,
+    .simulation-pic {
+        transform: none !important;
+        margin: 20px 0 !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Container full width */
+    .container {
+        width: 95% !important;
+        padding: 10px !important;
+    }
+
+    /* Navigation spacing */
+    nav a {
+        margin: 0 10px !important;
+        font-size: 16px !important;
+    }
+}
+
