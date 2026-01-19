@@ -184,3 +184,11 @@ footer {
     color: #777;
     margin-top: 40px;
 }
+
+.project {
+    display: block !important;
+}
+
+.project * {
+    position: relative !important;
+}
