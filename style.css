@@ -1,3 +1,191 @@
+/* GLOBAL STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #FFC067
+}
+
+/* NAVIGATION BAR */
+nav {
+    background: #1e1e1e;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* PAGE CONTAINER */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* SECTION BOXES */
+.section {
+    background: #6BAED6;
+    position: relative;
+    scroll-margin-top: 55px;
+    padding: 35px;
+    margin: 30px 0;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+.section h1 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.section h2 {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #444;
+}
+
+/* TEXT FORMAT */
+.my-text {
+    margin-left: 47%;
+    transform: translateX(0%);
+    transform: translateY(-115%);
+}
+
+/* ABOUT ME IMAGE */
+.profile-pic {
+    width: 400px;
+    height: 320px;
+    border-radius: 10%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.career-pic {
+    width: 400px;
+    height: 320px;
+    border-radius: 10%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 80px;
+    margin-bottom: 20px;
+}
+
+.section-3 {
+    background: #6BAED6;
+    position: relative;
+    scroll-margin-top: 55px;
+    padding: 35px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin: 30px 0;
+    height: 1620px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.sub-1 {
+    transform: translateX(8.5%);
+}
+
+.sub-1-text {
+    margin-left: 47%;
+    transform: translateX(0%);
+    transform: translateY(11%);
+}
+
+.project-img-1 {
+    width: 400px;
+    height: 320px;
+    transform: translateY(-345%);
+    border-radius: 10%;
+    object-fit: cover;
+    display: block;
+}
+
+.sub-2 {
+    transform: translate(63%, 510%);
+}
+
+.sub-2-text {
+    margin-right: 47%;
+    transform: translate(0%, 50%);
+}
+
+.game-code-pic {
+    width: 400px;
+    height: 320px;
+    transform: translate(530px, -950px);
+    border-radius: 10%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.game-pic {
+    width: 400px;
+    height: auto;
+    transform: translate(20px, -935px);
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.sub-3 {
+    transform: translate(70%, 1200%);
+}
+
+.sub-3-text {
+    margin-right: 46%;
+    transform: translate(0%, 95%);
+}
+
+.simulation-pic {
+    width: 400px;
+    height: 320px;
+    transform: translate(530px, -775px);
+    border-radius: 10%;
+    object-fit: cover;
+    display: block;
+
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    margin-top: 40px;
+}
+
+
 /* ============================================
    MOBILE FIXES — KEEP DESKTOP EXACTLY THE SAME
    ============================================ */
@@ -24,13 +212,14 @@
         font-size: 20px !important;
     }
 
-    /* CAREERS image */
+    /* DO NOT TOUCH ABOUT ME IMAGE OR AI IMAGE */
+    .profile-pic,
     .career-pic {
-        width: 100% !important;
+        width: auto !important;
         height: auto !important;
-        margin: 20px 0 !important;
         transform: none !important;
         position: static !important;
+        margin: 20px 0 !important;
     }
 
     /* PROJECT HEADINGS + TEXT */
@@ -52,7 +241,7 @@
         position: static !important;
     }
 
-    /* PROJECT IMAGES — ONLY THESE STACK */
+    /* ONLY PROJECT IMAGES GET FULL WIDTH + STACKING */
     .project-img-1,
     .game-code-pic,
     .game-pic,
