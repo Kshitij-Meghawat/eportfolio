@@ -1,9 +1,5 @@
-/* ============================================
-   MOBILE FIXES — PERFECT STACKING VERSION
-   ============================================ */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-    /* Let sections grow naturally */
     .section,
     .section-3 {
         height: auto !important;
@@ -11,7 +7,7 @@
         overflow: visible !important;
     }
 
-    /* ABOUT ME IMAGES */
+    /* ABOUT ME */
     .profile-pic,
     .career-pic {
         width: 100% !important;
@@ -22,52 +18,28 @@
         display: block !important;
     }
 
-    /* ABOUT ME TEXT */
     .my-text {
         margin: 0 !important;
         transform: none !important;
         font-size: 20px !important;
     }
 
-    /* PROJECTS — FLEX STACKING LIKE YOUR PERFECT VERSION */
-    #projects {
+    /* EACH PROJECT STACKS PERFECTLY */
+    .project {
         display: flex !important;
         flex-direction: column !important;
+        gap: 15px !important;
     }
 
-    /* Reset all transforms + positions */
-    .sub-1,
-    .sub-1-text,
-    .project-img-1,
-    .sub-2,
-    .sub-2-text,
-    .game-code-pic,
-    .game-pic,
-    .sub-3,
-    .sub-3-text,
-    .simulation-pic {
+    /* Reset transforms + positions for all project elements */
+    .project * {
         position: static !important;
         transform: none !important;
-        margin: 20px 0 !important;
         width: 100% !important;
         height: auto !important;
-        display: block !important;
+        margin: 0 !important;
         text-align: center !important;
     }
-
-    /* ORDERING — EXACT FLOW YOU SAID WAS PERFECT */
-    .sub-1 { order: 1; }
-    .sub-1-text { order: 2; }
-    .project-img-1 { order: 3; }
-
-    .sub-2 { order: 4; }
-    .sub-2-text { order: 5; }
-    .game-code-pic { order: 6; }
-    .game-pic { order: 7; }
-
-    .sub-3 { order: 8; }
-    .sub-3-text { order: 9; }
-    .simulation-pic { order: 10; }
 
     /* Container */
     .container {
@@ -75,7 +47,6 @@
         padding: 10px !important;
     }
 
-    /* Navigation */
     nav a {
         margin: 0 10px !important;
         font-size: 16px !important;
